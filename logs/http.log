@@ -86,3 +86,13 @@ Meta: {}
 2025-02-20 23:17:04 info: Connected to MongoDB successfully
 2025-02-20 23:17:04 info: Connected to DB successfully
 2025-02-20 23:17:04 info: Server is running on port 3000
+2025-03-05 23:48:11 warn: MongoDB disconnected
+2025-04-23 15:19:23 warn: MongoDB disconnected
+2025-04-23 15:20:32 warn: MongoDB disconnected
+2025-04-23 15:23:36 warn: MongoDB disconnected
+2025-04-23 15:27:46 warn: MongoDB disconnected
+2025-04-23 15:30:14 warn: MongoDB disconnected
+2025-04-23 15:34:27 warn: MongoDB disconnected
+2025-04-23 15:35:19 info: Connected to MongoDB successfully
+2025-04-23 15:35:19 info: Connected to DB successfully
+2025-04-23 15:35:19 info: Server is running on port 3000

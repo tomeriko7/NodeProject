@@ -13,15 +13,21 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/user", userRouter);
 app.use("/api/card", cardRouter);
-try {
-  await connectDB();
-  logger.info("Connected to DB successfully");
-} catch (error) {
-  logger.error("Failed to connect to DB", error);
-  process.exit(1);
-}
 
-const PORT = 3000;
-app.listen(PORT, () => {
-  logger.info(`Server is running on port ${PORT}`); // שימוש בלוגר במקום console.log
-});
+// Wrap the server startup in an async function
+const startServer = async () => {
+  try {
+    await connectDB();
+    logger.info("Connected to DB successfully");
+    
+    const PORT = 3000;
+    app.listen(PORT, () => {
+      logger.info(`Server is running on port ${PORT}`);
+    });
+  } catch (error) {
+    logger.error("Failed to connect to DB", error);
+    process.exit(1);
+  }
+};
+
+startServer();
